@@ -10,8 +10,8 @@ spec:
   - name: http-web    # Setting multiple ports listterns 
     protocol: TCP
     port: 80
-    targetPort: 9376
+    targetPort: 80
   - name: https-managment
     protocol: TCP
     port: 443
-    targetPort: 9388
+    targetPort: 443
