@@ -12,7 +12,7 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 100
+      maxSurge: 100%
       maxUnavailable: 0
   selector:  # Using the selector we tell our replicaset which pods to manage
     matchLabels:
