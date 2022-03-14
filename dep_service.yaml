@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: spring-service # Name of the service
 spec:
-  type: LoadBalancer
+  type: LoadBalancer   # Comment out this line in case if you want the service deployment to be clusterIP or the general service
   selector:
     type: canary-animals    # Run on any pod(s) with label - app: myapp
   ports:          # Map incoming port to target port
